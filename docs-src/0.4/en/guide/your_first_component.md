@@ -44,6 +44,7 @@ DemoFrame {
 	hackernews_post::story_v2::App {}
 }
 ```
+> Using [chrono](https://docs.rs/chrono/latest/chrono) to get current UTC time
 
 ## Creating Elements
 
