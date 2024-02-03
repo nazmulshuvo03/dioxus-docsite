@@ -165,3 +165,4 @@ DemoFrame {
 	hackernews_post::story_final::App {}
 }
 ```
+> Note: There will be a main function to call the App component and that will be different for different platforms. Platform specific main functions can be found in the [Getting Started](/learn/0.4/getting_started) page.
