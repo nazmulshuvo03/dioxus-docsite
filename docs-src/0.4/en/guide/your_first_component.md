@@ -124,6 +124,17 @@ We will also define what a post is and include information for how to transform 
 ```rust
 {{#include src/doc_examples/hackernews_post.rs:story_v6}}
 ```
+> Note: Using chrono with serde feature in this case. To add this in dependency crates use
+
+```sh
+cargo add chrono --features serde
+```
+
+> or, add the following line to *[dependencies]* section in Cargo.toml file:
+
+```
+chrono = { version = "0.4.33", features = ["serde"] }
+```
 
 Now, let's modify the `App` component to pass the story to our `StoryListing` component like we would set an attribute on an element:
 
