@@ -4,10 +4,16 @@ In this chapter, we will fetch data from the hacker news API and use it to rende
 
 ## Defining the API
 
-First we need to create some utilities to fetch data from the hackernews API using [reqwest](https://docs.rs/reqwest/latest/reqwest/index.html):
+First we need to create some utilities to fetch data from the hackernews API using [reqwest](https://docs.rs/reqwest/latest/reqwest/index.html) with _json_ feature, [futures](https://docs.rs/futures/latest/futures) and [async_recursion](https://docs.rs/async-recursion/latest/async_recursion) crate:
 
 ```rust
 {{#include src/doc_examples/hackernews_async.rs:api}}
+```
+
+> Note: To add a crate with features, we can run command like this:
+
+```bash
+cargo add reqwest --features json
 ```
 
 ## Working with Async
